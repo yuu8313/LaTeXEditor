@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaTeX数式エディター</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>LaTeX数式要素</h2>
+            <div class="draggable-items">
+                <div class="draggable" draggable="true" data-latex="\frac{a}{b}">分数</div>
+                <div class="draggable" draggable="true" data-latex="\sqrt{x}">平方根</div>
+                <div class="draggable" draggable="true" data-latex="\sum_{i=1}^{n}">総和</div>
+                <div class="draggable" draggable="true" data-latex="\int_{a}^{b}">積分</div>
+                <div class="draggable" draggable="true" data-latex="\lim_{x \to \infty}">極限</div>
+                <div class="draggable" draggable="true" data-latex="\prod_{i=1}^{n}">総乗</div>
+                <div class="draggable" draggable="true" data-latex="\binom{n}{k}">二項係数</div>
+                <div class="draggable" draggable="true" data-latex="\vec{a}">ベクトル</div>
+                <div class="draggable" draggable="true" data-latex="\overline{AB}">上線</div>
+                <div class="draggable" draggable="true" data-latex="\underline{x}">下線</div>
+                <div class="draggable" draggable="true" data-latex="\hat{x}">ハット</div>
+                <div class="draggable" draggable="true" data-latex="\bar{x}">バー</div>
+                <div class="draggable" draggable="true" data-latex="\dot{x}">ドット</div>
+                <div class="draggable" draggable="true" data-latex="\ddot{x}">ダブルドット</div>
+                <div class="draggable" draggable="true" data-latex="\mathbb{R}">実数集合</div>
+                <div class="draggable" draggable="true" data-latex="\mathcal{L}">カリグラフィー体</div>
+                <div class="draggable" draggable="true" data-latex="\partial f">偏微分</div>
+                <div class="draggable" draggable="true" data-latex="\nabla f">ナブラ</div>
+                <div class="draggable" draggable="true" data-latex="\infty">無限大</div>
+                <div class="draggable" draggable="true" data-latex="\exists">存在記号</div>
+                <div class="draggable" draggable="true" data-latex="\forall">全称記号</div>
+                <div class="draggable" draggable="true" data-latex="\in">要素記号</div>
+                <div class="draggable" draggable="true" data-latex="\subset">部分集合</div>
+                <div class="draggable" draggable="true" data-latex="\cup">和集合</div>
+                <div class="draggable" draggable="true" data-latex="\cap">共通部分</div>
+                <div class="draggable" draggable="true" data-latex="\equiv">合同</div>
+                <div class="draggable" draggable="true" data-latex="\approx">近似</div>
+                <div class="draggable" draggable="true" data-latex="\sim">相似</div>
+                <div class="draggable" draggable="true" data-latex="\cong">合同</div>
+                <div class="draggable" draggable="true" data-latex="\perp">垂直</div>
+                <div class="draggable" draggable="true" data-latex="\parallel">平行</div>
+                <div class="draggable" draggable="true" data-latex="\angle">角度</div>
+                <div class="draggable" draggable="true" data-latex="\triangle">三角形</div>
+                <div class="draggable" draggable="true" data-latex="\square">正方形</div>
+                <div class="draggable" draggable="true" data-latex="\circ">円</div>
+                <div class="draggable" draggable="true" data-latex="\sin\theta">正弦</div>
+                <div class="draggable" draggable="true" data-latex="\cos\theta">余弦</div>
+                <div class="draggable" draggable="true" data-latex="\tan\theta">正接</div>
+                <div class="draggable" draggable="true" data-latex="\log_a x">対数</div>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>LaTeX数式エディター</h1>
+            <div class="input-area">
+                <textarea id="latex-input" placeholder="LaTeX数式を入力してください..."></textarea>
+            </div>
+            <div class="preview-area">
+                <h3>プレビュー</h3>
+                <div id="preview"></div>
+            </div>
+            <div class="button-area">
+                <button id="clear-btn">クリア</button>
+                <button id="copy-btn">コピー</button>
+                <button id="download-tex-btn">TEXダウンロード</button>
+                <button id="download-html-btn">HTMLダウンロード</button>
+                <button id="download-txt-btn">TXTダウンロード</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
