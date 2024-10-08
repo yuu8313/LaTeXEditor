@@ -14,9 +14,16 @@
         <div class="sidebar">
             <h2>LaTeX数式要素</h2>
             <div class="draggable-items">
+            <div class="draggable" draggable="true" data-latex="\\">改行 (\\)</div>
+                <div class="draggable" draggable="true" data-latex="\quad">四分の一スペース (\quad)</div>
+                <div class="draggable" draggable="true" data-latex="\qquad">二倍のスペース (\qquad)</div>
+                <div class="draggable" draggable="true" data-latex="\,">小さなスペース (\,)</div>
+                <div class="draggable" draggable="true" data-latex="\:">中くらいのスペース (\:)</div>
+                <div class="draggable" draggable="true" data-latex="\; ">大きめのスペース (\;)</div>
+                <div class="draggable" draggable="true" data-latex="\!">負のスペース (\!)</div>
                 <div class="draggable" draggable="true" data-latex="\frac{a}{b}">分数</div>
                 <div class="draggable" draggable="true" data-latex="\sqrt{x}">平方根</div>
-                <div class="draggable" draggable="true" data-latex="^">乗数</div>
+                <div class="draggable" draggable="true" data-latex="^2">2乗</div>
                 <div class="draggable" draggable="true" data-latex="\sum_{i=1}^{n}">総和</div>
                 <div class="draggable" draggable="true" data-latex="\int_{a}^{b}">積分</div>
                 <div class="draggable" draggable="true" data-latex="\lim_{x \to \infty}">極限</div>
@@ -54,6 +61,82 @@
                 <div class="draggable" draggable="true" data-latex="\cos\theta">余弦</div>
                 <div class="draggable" draggable="true" data-latex="\tan\theta">正接</div>
                 <div class="draggable" draggable="true" data-latex="\log_a x">対数</div>
+                <div class="draggable" draggable="true" data-latex="\cosh{x}">双曲線余弦</div>
+                <div class="draggable" draggable="true" data-latex="\sinh{x}">双曲線正弦</div>
+                <div class="draggable" draggable="true" data-latex="\tanh{x}">双曲線正接</div>
+                <div class="draggable" draggable="true" data-latex="\arcsin{x}">アークサイン</div>
+                <div class="draggable" draggable="true" data-latex="\arccos{x}">アークコサイン</div>
+                <div class="draggable" draggable="true" data-latex="\arctan{x}">アークタンジェント</div>
+                <div class="draggable" draggable="true" data-latex="\deg">度</div>
+                <div class="draggable" draggable="true" data-latex="\gcd(a, b)">最大公約数</div>
+                <div class="draggable" draggable="true" data-latex="\lcm(a, b)">最小公倍数</div>
+                <div class="draggable" draggable="true" data-latex="\Re">実部</div>
+                <div class="draggable" draggable="true" data-latex="\Im">虚部</div>
+                <div class="draggable" draggable="true" data-latex="\arg">偏角</div>
+                <div class="draggable" draggable="true" data-latex="\dim V">次元</div>
+                <div class="draggable" draggable="true" data-latex="\ker A">核</div>
+                <div class="draggable" draggable="true" data-latex="\operatorname{rank} A">階数</div>
+                <div class="draggable" draggable="true" data-latex="\det(A)">行列式</div>
+                <div class="draggable" draggable="true" data-latex="\pm">プラスマイナス</div>
+                <div class="draggable" draggable="true" data-latex="\mp">マイナスプラス</div>
+                <div class="draggable" draggable="true" data-latex="\leq">小なりイコール</div>
+                <div class="draggable" draggable="true" data-latex="\geq">大なりイコール</div>
+                <div class="draggable" draggable="true" data-latex="\neq">等しくない</div>
+                <div class="draggable" draggable="true" data-latex="\approx">おおよそ</div>
+                <div class="draggable" draggable="true" data-latex="\propto">比例</div>
+                <div class="draggable" draggable="true" data-latex="\subseteq">部分集合（等しいかもしれない）</div>
+                <div class="draggable" draggable="true" data-latex="\supseteq">上位集合（等しいかもしれない）</div>
+                <div class="draggable" draggable="true" data-latex="\varnothing">空集合</div>
+                <div class="draggable" draggable="true" data-latex="\perp">直交</div>
+                <div class="draggable" draggable="true" data-latex="\sum^{\infty}_{n=1}">無限級数</div>
+                <div class="draggable" draggable="true" data-latex="\prod^{\infty}_{n=1}">無限積</div>
+                <div class="draggable" draggable="true" data-latex="\log_{10} x">常用対数</div>
+                <div class="draggable" draggable="true" data-latex="\exp(x)">指数関数</div>
+                <div class="draggable" draggable="true" data-latex="\implies">ならば</div>
+                <div class="draggable" draggable="true" data-latex="\iff">同値</div>
+                <div class="draggable" draggable="true" data-latex="\leftarrow">左矢印</div>
+                <div class="draggable" draggable="true" data-latex="\rightarrow">右矢印</div>
+                <div class="draggable" draggable="true" data-latex="\uparrow">上矢印</div>
+                <div class="draggable" draggable="true" data-latex="\downarrow">下矢印</div>
+                <div class="draggable" draggable="true" data-latex="\Leftrightarrow">両方向矢印</div>
+                <div class="draggable" draggable="true" data-latex="\int_{-\infty}^{\infty}">無限積分</div>
+                <div class="draggable" draggable="true" data-latex="\iint_{D}">二重積分</div>
+                <div class="draggable" draggable="true" data-latex="\iiint_{V}">三重積分</div>
+                <div class="draggable" draggable="true" data-latex="\alpha">アルファ (α)</div>
+                <div class="draggable" draggable="true" data-latex="\beta">ベータ (β)</div>
+                <div class="draggable" draggable="true" data-latex="\gamma">ガンマ (γ)</div>
+                <div class="draggable" draggable="true" data-latex="\delta">デルタ (δ)</div>
+                <div class="draggable" draggable="true" data-latex="\epsilon">イプシロン (ε)</div>
+                <div class="draggable" draggable="true" data-latex="\zeta">ゼータ (ζ)</div>
+                <div class="draggable" draggable="true" data-latex="\eta">エータ (η)</div>
+                <div class="draggable" draggable="true" data-latex="\theta">シータ (θ)</div>
+                <div class="draggable" draggable="true" data-latex="\iota">イオタ (ι)</div>
+                <div class="draggable" draggable="true" data-latex="\kappa">カッパ (κ)</div>
+                <div class="draggable" draggable="true" data-latex="\lambda">ラムダ (λ)</div>
+                <div class="draggable" draggable="true" data-latex="\mu">ミュー (μ)</div>
+                <div class="draggable" draggable="true" data-latex="\nu">ニュー (ν)</div>
+                <div class="draggable" draggable="true" data-latex="\xi">クサイ (ξ)</div>
+                <div class="draggable" draggable="true" data-latex="\omicron">オミクロン (ο)</div>
+                <div class="draggable" draggable="true" data-latex="\pi">パイ (π)</div>
+                <div class="draggable" draggable="true" data-latex="\rho">ロー (ρ)</div>
+                <div class="draggable" draggable="true" data-latex="\sigma">シグマ (σ)</div>
+                <div class="draggable" draggable="true" data-latex="\tau">タウ (τ)</div>
+                <div class="draggable" draggable="true" data-latex="\upsilon">ウプシロン (υ)</div>
+                <div class="draggable" draggable="true" data-latex="\phi">ファイ (φ)</div>
+                <div class="draggable" draggable="true" data-latex="\chi">カイ (χ)</div>
+                <div class="draggable" draggable="true" data-latex="\psi">プサイ (ψ)</div>
+                <div class="draggable" draggable="true" data-latex="\omega">オメガ (ω)</div>
+                <div class="draggable" draggable="true" data-latex="\Gamma">ガンマ (Γ)</div>
+                <div class="draggable" draggable="true" data-latex="\Delta">デルタ (Δ)</div>
+                <div class="draggable" draggable="true" data-latex="\Theta">シータ (Θ)</div>
+                <div class="draggable" draggable="true" data-latex="\Lambda">ラムダ (Λ)</div>
+                <div class="draggable" draggable="true" data-latex="\Xi">クサイ (Ξ)</div>
+                <div class="draggable" draggable="true" data-latex="\Pi">パイ (Π)</div>
+                <div class="draggable" draggable="true" data-latex="\Sigma">シグマ (Σ)</div>
+                <div class="draggable" draggable="true" data-latex="\Upsilon">ウプシロン (Υ)</div>
+                <div class="draggable" draggable="true" data-latex="\Phi">ファイ (Φ)</div>
+                <div class="draggable" draggable="true" data-latex="\Psi">プサイ (Ψ)</div>
+                <div class="draggable" draggable="true" data-latex="\Omega">オメガ (Ω)</div>
             </div>
         </div>
         <div class="main-content">
